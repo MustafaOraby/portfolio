@@ -1,0 +1,76 @@
+{
+  "theme": {
+    "dark": "change to dark mode",
+    "light": "change to light mode"
+  },
+  "hero": {
+    "greeting": "Welcome to My Portfolio",
+    "intro": "Hi, I'm Mustafa – a Frontend Developer passionate about creating beautiful and functional web experiences."
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I'm a Full Stack Developer with expertise in Node.js, React, Next.js, and MongoDB. My craft transforms lines of code into captivating, user-centric web journeys where innovation meets functionality. Every project is an opportunity to push boundaries and weave seamless digital experiences that enchant and empower users. Guided by an endless passion for creativity, I believe each line of code is a chance to turn the extraordinary into reality."
+  },
+  "projects": {
+    "title": "Projects",
+    "description": "Here are some of the projects I've worked on recently.",
+    "project1": {
+      "title": "E-commerce Website",
+      "description": "In this project, the products of an online store are stored, classified and recalled, so that some products can later be selected and added to the shopping cart or to the favorite products page via state management. Registration on the site is available for a new user via Firebase.",
+      "techStack": "React, Redux, Firebase, Tailwind CSS",
+      "liveDemo": "Live Demo",
+      "sourceCode": "Source Code"
+    },
+    "project2": {
+      "title": "Quran Spirit",
+      "description": "An online platform showcasing Quranic recitations from various readers, featuring complete Quran collections and the ability to customize readings by selecting the reader and desired Surah.",
+      "techStack": "HTML, Tailwind CSS, NextJS, TypeScript",
+      "liveDemo": "Live Demo",
+      "sourceCode": "Source Code"
+    },
+    "project3": {
+      "title": "Movie Land",
+      "description": "In this project, a database is called from an external API to be used and display its contents on this site for displaying and classifying movies and searching within them.",
+      "techStack": "HTML, CSS, ReactJS, Bootstrap",
+      "liveDemo": "Live Demo",
+      "sourceCode": "Source Code"
+    }
+  },
+  "skills": {
+    "title": "My Skills",
+    "description": "Technologies and tools I'm proficient in."
+  },
+  "certificates": {
+    "title": "Certificates",
+    "description": "Certifications I've earned in web development and related fields."
+  },
+"experience": {
+  "title": "My Experience",
+  "description": "Here are some of the key experiences I've had.",
+  "wxoraDescription": "This was training on modern web technologies and how to create web applications that match the market's needs.",
+  "smartLinesDescription": "My role in this company was based on using front-end technologies to show website details to users."
+},
+  "contact": {
+    "title": "Contact Me",
+    "description": "Feel free to reach out to me via email or social media.",
+    "myEmail": "copied my email",
+    "submit": "submit",
+    "name": "Your Name",
+    "email": "Your Email",
+    "message": "Create Yor Message ...",
+    "send": "Send",
+    "success": "Your message has been sent successfully!",
+    "copied": "Email copied",
+    "copiedError": "Failed to copy email",
+    "error": "There was an error sending your message. Please try again."
+  },
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "skills": "Skills",
+    "certificates": "Certificates",
+    "experience": "Experience",
+    "contact": "Contact"
+  }
+}
