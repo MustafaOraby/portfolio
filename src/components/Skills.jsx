@@ -38,17 +38,17 @@ const Skills = () => {
       className="min-h-screen py-20 px-6 bg-white dark:bg-gray-800 transition-colors"
     >
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-6 text-primary dark:text-secondary">
+        <h2 className="text-xl md:text-3xl font-bold mb-6 text-primary dark:text-secondary">
           {t("skills.title")}
         </h2>
-        <p className="text-lg text-gray-500 dark:text-gray-400 mb-8">
+        <p className="text-sm md:text-lg text-gray-500 dark:text-gray-400 mb-8">
           {t("skills.description")}
         </p>
-        <ul className="grid grid-cols-2 md:grid-cols-4 gap-6 text-xl relative">
+        <ul className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-6 text-sm md:text-xl relative">
           {TechSkills.map((skill, index) => (
             <motion.li
               key={skill.name}
-              className={`cursor-pointer bg-gray-100 dark:bg-gray-700 flex items-center justify-center rounded-lg p-4 shadow-md hover:scale-105 transition-transform duration-300 ${
+              className={`cursor-pointer m-1 bg-gray-100 dark:bg-gray-700 flex items-center justify-center rounded-lg p-3 md:p-4 shadow-md hover:scale-105 transition-transform duration-300 ${
                 index === TechSkills.length - 1
                   ? "col-span-2 md:col-span-4"
                   : ""
@@ -58,8 +58,8 @@ const Skills = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.05, delay: index * 0.06 }}
             >
-              <div className="flex items-center gap-2">
-                <skill.icon className={`text-4xl ${skill.color}`} />
+              <div className=" flex items-center justify-between  md:gap-2">
+                <skill.icon className={ ` mx-2 text-2xl md:text-4xl ${skill.color}`} />
                 <span>{skill.name}</span>
               </div>
             </motion.li>

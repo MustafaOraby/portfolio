@@ -61,21 +61,21 @@ const App = () => {
     <div className="fixed bottom-5 right-5 z-50  group transition duration-300">
           <button
             onClick={toggleDarkMode}
-            className="hover:bg-primary-dark hover:shadow-lg p-3 border-primary border-2 bg-white dark:bg-primary  text-white rounded-full cursor-pointer flex items-center gap-2"
+            className="hover:bg-primary-dark hover:shadow-lg p-2 md:p-3 border-primary border-2 bg-white dark:bg-primary  text-white rounded-full cursor-pointer flex items-center gap-2"
           >
             {darkMode ? (
               <div className="flex   items-center gap-2  transition duration-300 cursor-pointer">
                 <span className="fixed bottom-15 right-5 hidden group-hover:block transition duration-300 bg-info/30 text-black dark:text-white   mb-3 p-2 rounded-lg">
                   {t("theme.light")}
                 </span>
-                <MdDarkMode className="text-xl text-primary dark:text-white " />
+                <MdDarkMode className="text-sm md:text-xl text-primary dark:text-white " />
               </div>
             ) : (
               <div className="flex   items-center gap-2  transition duration-300 cursor-pointer">
                 <span className="fixed bottom-15 right-5 hidden group-hover:block transition duration-300 bg-info/30   mb-3 p-2 rounded-lg text-black dark:text-white">
                   {t("theme.dark")}
                 </span>
-                <MdLightMode className="text-xl text-primary dark:text-white" />
+                <MdLightMode className="text-sm md:text-xl text-primary dark:text-white" />
               </div>
             )}
           </button>
@@ -88,9 +88,9 @@ const App = () => {
             </span>
             <button
               onClick={toggleLang}
-              className=" hover:bg-primary-dark hover:shadow-lg p-3 border-primary border-2 bg-white dark:bg-primary  text-white rounded-full cursor-pointer flex items-center gap-2  "
+              className=" hover:bg-primary-dark hover:shadow-lg p-2 md:p-3 border-primary border-2 bg-white dark:bg-primary  text-white rounded-full cursor-pointer flex items-center gap-2  "
             >
-              <MdOutlineLanguage className="text-xl text-primary dark:text-white " />
+              <MdOutlineLanguage className="text-sm md:text-xl text-primary dark:text-white " />
             </button>
           </div>
         </div>

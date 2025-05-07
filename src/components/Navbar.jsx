@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { useTranslation } from "react-i18next";
 import { FiMenu, FiX } from "react-icons/fi";
-
+import Logo from "/src/assets/logo.png"
 const Navbar = () => {
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
@@ -23,9 +23,9 @@ const Navbar = () => {
       {/* Logo */}
       <a href="#hero" className="fixed top-0 left-0 z-50 p-5">
         <img
-          src="/src/assets/logo.png"
+          src={Logo}
           alt="Logo"
-          className="w-50 px-5 fixed top-1 left-0"
+          className=" w-30 p-2 md:w-50   md:px-5 fixed top-1 left-0"
         />
       </a>
 
@@ -56,7 +56,7 @@ const Navbar = () => {
       <div className="lg:hidden fixed top-4 right-4 z-50">
         <button
           onClick={toggleMenu}
-          className="text-primary dark:text-secondary text-3xl"
+          className="text-primary dark:text-secondary text-2xl md:text-3xl"
         >
           {isOpen ? <FiX /> : <FiMenu />}
         </button>
@@ -64,11 +64,11 @@ const Navbar = () => {
 
       {/* Mobile Dropdown Menu */}
       <div
-        className={`lg:hidden fixed top-16 left-4 right-4 z-40 bg-background/95 dark:bg-background-dark rounded-xl shadow-xl p-5 transition-all duration-500 ease-in-out transform ${
+        className={`lg:hidden fixed top-10 left-4 right-4 z-40 bg-background/95 dark:bg-background-dark rounded-xl shadow-xl p-5 transition-all duration-500 ease-in-out transform ${
           isOpen ? "scale-100 opacity-100" : "scale-95 opacity-0 pointer-events-none"
         }`}
       >
-        <ul className="flex flex-col gap-4 text-center text-primary dark:text-secondary">
+        <ul className="flex flex-col gap-1 text-center text-primary dark:text-secondary">
           {navLinks.map((link) => (
             <li key={link.to}>
               <Link
@@ -79,7 +79,7 @@ const Navbar = () => {
                 duration={400}
                 offset={-100}
                 onClick={() => setIsOpen(false)} // Close on click
-                className="cursor-pointer px-4 py-2 rounded-xl transition-all duration-300 hover:bg-white dark:hover:bg-gray-800"
+                className=" cursor-pointer p-1 text-[13px] rounded-xl transition-all duration-300 hover:bg-white dark:hover:bg-gray-800"
               >
                 {link.name}
               </Link>

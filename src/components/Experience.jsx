@@ -28,10 +28,10 @@ const Experience = () => {
       className="min-h-screen py-20 px-6 bg-white dark:bg-gray-800 transition-colors"
     >
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-6 text-primary dark:text-secondary">
+        <h2 className="text-xl md:text-3xl font-bold mb-6 text-primary dark:text-secondary">
           {t("experience.title")}
         </h2>
-        <p className="text-lg text-gray-500 dark:text-gray-400 mb-8">
+        <p className="text-sm md:text-lg text-gray-500 dark:text-gray-400 mb-8">
           {t("experience.description")}
         </p>
 
@@ -43,27 +43,20 @@ const Experience = () => {
               whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
               transition={{ duration: 2, type:"spring", delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-gray-100 dark:bg-gray-700 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-shadow border-2 border-gray-300 dark:border-gray-600"
+              className="bg-gray-100 dark:bg-gray-700 rounded-2xl p-3 md:p-6 shadow-lg hover:shadow-2xl transition-shadow border-1 md:border-2 border-gray-300 dark:border-gray-600"
             >
-              <h3 className="text-2xl font-semibold ">
+              <h3 className="text-md md:text-2xl font-semibold ">
                 {exp.role} - <span className="text-primary dark:text-secondary">{exp.company}</span>
               </h3>
               <p className="text-sm text-gray-500 dark:text-gray-400 mb-2">{exp.date}</p>
-              <p className="text-md text-gray-700 dark:text-gray-200 mb-2">
+              <p className="text-sm md:text-md text-gray-700 dark:text-gray-200 mb-2">
                 {t(exp.description)}
               </p>
               <p className="text-sm text-gray-600 dark:text-gray-300 italic">
                 {exp.technologies}
               </p>
 
-              {exp.certificate && (
-                <motion.img
-                  src={exp.certificate}
-                  alt="Certificate"
-                  className="mt-4 rounded-md w-full sm:w-1/2 mx-auto opacity-0 hover:opacity-100 transition-opacity duration-500"
-                  whileHover={{ scale: 1.05 }}
-                />
-              )}
+             
             </motion.li>
           ))}
         </ul>

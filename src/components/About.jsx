@@ -34,20 +34,20 @@ const About = () => {
   return (
     <section
       id="about"
-      className="flex justify-center items-center py-20 px-6 bg-white dark:bg-gray-800 transition-colors min-h-screen"
+      className="flex justify-center items-center md:py-20 px-3 md:px-6 bg-white dark:bg-gray-800 transition-colors min-h-screen"
     >
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-4 text-primary dark:text-secondary">
+        <h2 className="text-xl md:text-3xl font-bold mb-4 text-primary dark:text-secondary">
           {t("about.title")}
         </h2>
-        <p className="text-xl leading-loose text-center text-gray-700 dark:text-gray-300">
+        <p className="text-sm md:text-xl leading-loose text-center text-gray-700 dark:text-gray-300">
           {t("about.description")}
         </p>
         <div className="flex flex-wrap justify-center items-center gap-6 mt-10">
           {skills.map(({ icon: Icon, color }, index) => (
             <Icon
               key={index}
-              className="text-4xl hover:scale-110 transition-transform duration-300 cursor-pointer"
+              className="text-xl md:text-4xl hover:scale-110 transition-transform duration-300 cursor-pointer"
               style={{ color }}
             />
           ))}

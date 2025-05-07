@@ -22,11 +22,11 @@ const Contact = () => {
       className="min-h-screen w-full flex justify-center items-center py-20 px-6 bg-gray-100 dark:bg-gray-900 transition-colors"
     >
       <div className="w-full mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-6 text-primary dark:text-secondary">
+        <h2 className="text-xl md:text-3xl font-bold mb-6 text-primary dark:text-secondary">
           {t("contact.title")}
         </h2>
 
-        <p className="text-lg text-gray-500 dark:text-gray-400 mb-8">
+        <p className="text-sm md:text-lg text-gray-500 dark:text-gray-400 mb-8">
           {t("contact.description")}
         </p>
 
@@ -37,14 +37,14 @@ const Contact = () => {
         )}
 
         {!state.succeeded && (
-          <form onSubmit={handleSubmit} className="flex flex-col items-center space-y-4 w-full">
+          <form onSubmit={handleSubmit} className="flex flex-col items-center  space-y-4 w-full">
             <input
               id="name"
               type="text"
               name="name"
               required
               placeholder={t("contact.name")}
-              className="p-3 rounded-lg w-full md:w-1/2 bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 border border-gray-300 focus:border-blue-500 dark:focus:border-secondary focus:outline-none"
+              className="p-2 md:p-3 rounded-lg w-full md:w-1/2 bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 border border-gray-300 focus:border-blue-500 dark:focus:border-secondary focus:outline-none"
             />
             <input
               id="email"
@@ -52,7 +52,7 @@ const Contact = () => {
               name="email"
               required
               placeholder={t("contact.email")}
-              className="p-3 rounded-lg w-full md:w-1/2 bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 border border-gray-300 focus:border-blue-500 dark:focus:border-secondary focus:outline-none"
+              className="p-2 md:p-3 rounded-lg w-full md:w-1/2 bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 border border-gray-300 focus:border-blue-500 dark:focus:border-secondary focus:outline-none"
             />
             <ValidationError
               prefix="Email"
@@ -106,7 +106,7 @@ const Contact = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaLinkedin className="text-xl" />
+                <FaLinkedin className="text-md md:text-xl" />
               </a>
               <a
                 className="w-10 bg-primary dark:bg-secondary text-white hover:bg-white hover:text-primary dark:hover:text-secondary hover:font-bold hover:border-2 duration-400 transition-all cursor-pointer h-full rounded-full flex justify-center items-center"
@@ -114,7 +114,7 @@ const Contact = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaGithub className="text-xl" />
+                <FaGithub className="text-md md:text-xl" />
               </a>
             </div>
           </form>
