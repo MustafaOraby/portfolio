@@ -7,12 +7,19 @@ import { BiLogoTypescript, BiLogoRedux } from "react-icons/bi";
 import { SiNextdotjs, SiExpress, SiMongodb } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { GiGearStickPattern } from "react-icons/gi";
+import { TbBrandVite } from "react-icons/tb";
+
 import Prject1Img1 from "../assets/projectsImg/storeLaptopSizeImg.png";
 import Prject1Img2 from "../assets/projectsImg/storeMobileSizeImg.png";
-import Prject2Img1 from "../assets/projectsImg/quranLaptopSizeImg.png";
-import Prject2Img2 from "../assets/projectsImg/quranMobileSizeImg.png";
+import Prject2Img1 from "../assets/projectsImg/quranspirit.labtop.png";
+import Prject2Img2 from "../assets/projectsImg/quranspirit.mobile.png";
 import Prject3Img1 from "../assets/projectsImg/movieLaptopSizeImg.png";
 import Prject3Img2 from "../assets/projectsImg/movieMobileSizeImg.png";
+import Prject4Img1 from "../assets/projectsImg/tictactoeLaptopSizeImg.png";
+import Prject4Img2 from "../assets/projectsImg/tictactoeMobileSizeImg.png";
+import Prject5Img1 from "../assets/projectsImg/portfolioLaptopSizeImg.png";
+import Prject5Img2 from "../assets/projectsImg/portfolioMobileSizeImg.png";
+
 const Projects = () => {
   const { t } = useTranslation();
 
@@ -29,29 +36,36 @@ const Projects = () => {
         <div className="flex flex-wrap justify-center gap-6 mt-10">
           {/* Replace with your project cards */}
           <Card
-            laptopImgSrc={Prject1Img1}
-            phoneImgSrc={Prject1Img2}
-            title={t("projects.project1.title")}
-            description={t("projects.project1.description")}
-            techStack={{
-              tech1: <FaReact />,
-              tech2: <BiLogoRedux />,
-              tech3: <IoLogoFirebase />,
-              tech4: <RiTailwindCssFill />,
-            }}
-          />
-          <Card
             laptopImgSrc={Prject2Img1}
             phoneImgSrc={Prject2Img2}
             title={t("projects.project2.title")}
             description={t("projects.project2.description")}
             techStack={{
               tech1: <FaHtml5 />,
-              tech2: <RiTailwindCssFill />,
-              tech3: <SiNextdotjs />,
-              tech4: <BiLogoTypescript/>,
+              tech2: <FaCss3 />,
+              tech3: <BiLogoTypescript/>,
+              tech4: <RiTailwindCssFill />,
+              tech5: <SiNextdotjs />,
             }}
+            LiveDemoLink="https://quranspirit.vercel.app/"
           />
+          <Card
+            laptopImgSrc={Prject1Img1}
+            phoneImgSrc={Prject1Img2}
+            title={t("projects.project1.title")}
+            description={t("projects.project1.description")}
+            techStack={{
+              tech1: <FaHtml5 />,
+              tech2: <FaCss3 />,
+              tech3: <FaJs />,
+              tech4: <FaReact />,
+              tech5: <BiLogoRedux />,
+              tech6: <IoLogoFirebase />,
+              tech7: <RiTailwindCssFill />,
+            }}
+            LiveDemoLink="https://obedient-straw.surge.sh/"
+          />
+         
           <Card
             laptopImgSrc={Prject3Img1}
             phoneImgSrc= {Prject3Img2}
@@ -60,9 +74,41 @@ const Projects = () => {
             techStack={{
               tech1: <FaHtml5 />,
               tech2: <FaCss3 />,
-              tech3: <FaReact />,
-              tech4: <FaBootstrap />,
+              tech3: <FaJs />,
+              tech4: <FaReact />,
+              tech5: <FaBootstrap />,
             }}
+            LiveDemoLink="https://flawless-history.surge.sh/"
+          />
+          <Card
+            laptopImgSrc={Prject4Img1}
+            phoneImgSrc= {Prject4Img2}
+            title={t("projects.project4.title")}
+            description={t("projects.project4.description")}
+            techStack={{
+              tech1: <FaHtml5 />,
+              tech2: <FaCss3 />,
+
+              tech3: <FaJs />,
+              tech4: <FaReact />,
+              
+            }}
+            LiveDemoLink="https://available-sheet.surge.sh/"
+          />
+          <Card
+            laptopImgSrc={Prject5Img1}
+            phoneImgSrc= {Prject5Img2}
+            title={t("projects.project5.title")}
+            description={t("projects.project5.description")}
+            techStack={{
+              tech1: <FaHtml5 />,
+              tech2: <FaCss3 />,
+
+              tech3: <FaJs />,
+              tech4: <TbBrandVite />,
+              
+            }}
+            LiveDemoLink="/"
           />
         </div>
       </div>

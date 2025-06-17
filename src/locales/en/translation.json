@@ -13,10 +13,12 @@
   },
   "projects": {
     "title": "Projects",
-    "description": "Here are some of the projects I've worked on recently.",
+    "description": "Here are some of the projects I've worked on recently.",   
+     "liveDemo": "Live Demo",
+      "sourceCode": "Source Code",
     "project1": {
       "title": "E-commerce Website",
-      "description": "In this project, the products of an online store are stored, classified and recalled, so that some products can later be selected and added to the shopping cart or to the favorite products page via state management. Registration on the site is available for a new user via Firebase.",
+      "description": "In this project, the products of an online store are stored, classified and recalled, so that some products can later be selected and added to the shopping cart or to the favorite products page via state management. with login for users .",
       "techStack": "React, Redux, Firebase, Tailwind CSS",
       "liveDemo": "Live Demo",
       "sourceCode": "Source Code"
@@ -34,6 +36,20 @@
       "techStack": "HTML, CSS, ReactJS, Bootstrap",
       "liveDemo": "Live Demo",
       "sourceCode": "Source Code"
+    },"project4": {
+      "title": "Tic Tac Toe",
+      "description": "A simple game using JavaScript.. able to play against diversity and can achieve results for all players",
+      "techStack": {
+        "tech1": "HTML",
+        "tech2": "CSS",
+        "tech3": "ReactJS",
+        "tech4": "Bootstrap"
+      },
+      "liveDemo": "عرض مباشر",
+      "sourceCode": "عرض الكود"
+    },"project5": {
+      "title": "Portfolio",
+      "description": " portfolio to showcase all web-related work with a brief overview, some certificates and skills."
     }
   },
   "skills": {
