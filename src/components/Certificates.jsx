@@ -4,12 +4,13 @@ import Certicate1 from "../assets/certificat/wxora.jpg";
 import Certicate2 from "../assets/certificat/udemy.jpg";
 import Certicate3 from "../assets/certificat/udemy2.jpg";
 import Certicate4 from "../assets/certificat/iti-mongo.jpg";
+import Certicate5 from "../assets/certificat/IBM-Skills.jpg";
 
 
 const Certificates = () => {
   const { t } = useTranslation();
 
-  const certificates = [Certicate1, Certicate2, Certicate3, Certicate4];
+  const certificates = [Certicate1, Certicate2, Certicate3, Certicate4, Certicate5];
 
   return (
     <section
