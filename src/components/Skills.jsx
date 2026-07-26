@@ -2,9 +2,9 @@ import { useTranslation } from "react-i18next";
 /* eslint-disable no-unused-vars */
 
 import { motion } from "framer-motion"; // ← استدعاء framer-motion
-import { FaHtml5, FaJs, FaReact, FaNodeJs, FaBootstrap } from "react-icons/fa";
+import { FaHtml5, FaJs, FaReact, FaNodeJs, FaBootstrap , FaPython } from "react-icons/fa";
 import { IoLogoCss3, IoLogoGithub } from "react-icons/io";
-import { BiLogoTypescript } from "react-icons/bi";
+import { BiLogoTypescript,BiLogoFlask } from "react-icons/bi";
 import { SiNextdotjs, SiExpress, SiMongodb } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { GiGearStickPattern } from "react-icons/gi";
@@ -22,6 +22,8 @@ const TechSkills = [
   { name: "Tailwind CSS", icon: RiTailwindCssFill, color: "text-[#38bdf8]" },
   { name: "MongoDB", icon: SiMongodb, color: "text-[#47a248]" },
   { name: "GitHub", icon: IoLogoGithub, color: "text-[#181717]" },
+  { name: "Python", icon: FaPython, color: "text-[#356c99]" },
+  { name: "Flask", icon: BiLogoFlask, color: "text-[#ffffff]" },
   {
     name: "Design Patterns",
     icon: GiGearStickPattern,
