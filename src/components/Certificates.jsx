@@ -1,16 +1,17 @@
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
-import Certicate1 from "../assets/certificat/wxora.jpg";
-import Certicate2 from "../assets/certificat/udemy.jpg";
-import Certicate3 from "../assets/certificat/udemy2.jpg";
-import Certicate4 from "../assets/certificat/iti-mongo.jpg";
-import Certicate5 from "../assets/certificat/IBM-Skills.jpg";
+import Certicate1 from "../assets/certificat/EPFL.jpg";
+import Certicate2 from "../assets/certificat/IBM-Skills.jpg";
+import Certicate3 from "../assets/certificat/wxora.jpg";
+import Certicate4 from "../assets/certificat/udemy.jpg";
+import Certicate5 from "../assets/certificat/udemy2.jpg";
+import Certicate6 from "../assets/certificat/iti-mongo.jpg";
 
 
 const Certificates = () => {
   const { t } = useTranslation();
 
-  const certificates = [Certicate1, Certicate2, Certicate3, Certicate4, Certicate5];
+  const certificates = [Certicate1, Certicate2, Certicate3, Certicate4, Certicate5, Certicate6];
 
   return (
     <section
