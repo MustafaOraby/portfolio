@@ -16,6 +16,14 @@
     "description": "Here are some of the projects I've worked on recently.",   
      "liveDemo": "Live Demo",
       "sourceCode": "Source Code",
+          "project0": {
+      "title": "Smart Vehicle Monitor",
+      "description": "In this application, readings are sent via a virtual unit inside the vehicle, based on which the data is analyzed and a simple report is generated.",
+
+      
+      "liveDemo": "Live Demo",
+      "sourceCode": "Source Code"
+    },
     "project1": {
       "title": "E-commerce Website",
       "description": "In this project, the products of an online store are stored, classified and recalled, so that some products can later be selected and added to the shopping cart or to the favorite products page via state management. with login for users .",
