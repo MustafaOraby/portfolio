@@ -5,7 +5,7 @@ const experiences = [
      {
     company: "RemoteCoders",
     role: "Full Stack Web Development Bootcamp",
-    date: "7/2022 - 8/2023",
+    date: "7/2026 - 8/2026",
     description: "Built full-stack features using Python, Flask and JS, authentication and CRUD.",
     technologies: "HTML, CSS, JS, Python, Flask",
   },

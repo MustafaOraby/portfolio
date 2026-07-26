@@ -102,8 +102,8 @@ const App = () => {
       <Projects />
       <Skills />
 
-    <Certificates /> 
       <Experience />
+    <Certificates /> 
       <Contact />
       <Footer/>
     </div>
