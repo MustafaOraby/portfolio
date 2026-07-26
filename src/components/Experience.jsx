@@ -2,6 +2,13 @@ import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 
 const experiences = [
+     {
+    company: "RemoteCoders",
+    role: "Full Stack Web Development Bootcamp",
+    date: "7/2022 - 8/2023",
+    description: "Built full-stack features using Python, Flask and JS, authentication and CRUD.",
+    technologies: "HTML, CSS, JS, Python, Flask",
+  },
   {
     company: "Wxora",
     role: "Web Development Training",
@@ -17,6 +24,7 @@ const experiences = [
     description: "experience.smartLinesDescription",
     technologies: "HTML, CSS, JS",
   },
+
 ];
 
 const Experience = () => {
