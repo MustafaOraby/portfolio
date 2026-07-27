@@ -22,7 +22,7 @@ const TechSkills = [
   { name: "MongoDB", icon: SiMongodb, color: "text-[#47a248]" },
   { name: "GitHub", icon: IoLogoGithub, color: "text-[#181717]" },
   { name: "Python", icon: FaPython, color: "text-[#356c99]" },
-  { name: "Flask", icon: BiLogoFlask, color: "text-[#ffffff]" }, // تم تعديل الأيقونة أيضاً لـ BiLogoFlask
+  { name: "Flask", icon: BiLogoFlask, color: "text-[#2c6b7e]" }, // تم تعديل الأيقونة أيضاً لـ BiLogoFlask
 ];
 
 const Skills = () => {
