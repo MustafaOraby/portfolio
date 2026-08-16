@@ -6,10 +6,9 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 const Contact = () => {
   const { t } = useTranslation();
   const [copied, setCopied] = useState(false);
-  const [state, handleSubmit] = useForm("meoavega"); // ← استخدم ID الخاص بك من Formspree
-
+  const [state, handleSubmit] = useForm("meoavega"); 
   function copyEmail() {
-    const email = "your.email@example.com"; // ✉️ ضع بريدك هنا
+    const email = "mustafa.orapi@gmail.com"; // ✉️ 
     navigator.clipboard.writeText(email).then(() => {
       setCopied(true);
       setTimeout(() => setCopied(false), 3000);
