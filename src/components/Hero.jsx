@@ -2,10 +2,10 @@
 /* eslint-disable no-unused-vars */
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import MyPic from "../assets/profile.png"; // Assuming you have a profile image in this path
+import MyPic from "../assets/profile.jpg"; // Assuming you have a profile image in this path
 const Hero = () => {
   const { t } = useTranslation();
-
+    
   return (
     <section
       id="hero"

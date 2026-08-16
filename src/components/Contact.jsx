@@ -15,7 +15,7 @@ const Contact = () => {
       setTimeout(() => setCopied(false), 3000);
     });
   }
-
+  
   return (
     <section
       id="contact"
